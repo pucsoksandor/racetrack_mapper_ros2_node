@@ -92,7 +92,7 @@ private:
         pcl::PointCloud<pcl::PointXYZ>::Ptr filtered_cloud(new pcl::PointCloud<pcl::PointXYZ>);
         pcl::VoxelGrid<pcl::PointXYZ> voxel_filter;
         voxel_filter.setInputCloud(pcl_cloud);
-        voxel_filter.setLeafSize(1.0f, 1.0f, 1.0f); //set 1m
+        voxel_filter.setLeafSize(1.0f, 1.0f, 1.0f); //set 1
         voxel_filter.filter(*filtered_cloud);
 
         // Lock map access to avoid concurrency issues and update the accumulated map
