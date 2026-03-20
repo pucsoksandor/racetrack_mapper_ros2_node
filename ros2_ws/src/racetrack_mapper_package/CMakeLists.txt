@@ -23,14 +23,14 @@ include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
-# process_data_node (PCL kell)
+# process_data_node 
 add_executable(process_data_node src/data_process.cpp)
 ament_target_dependencies(process_data_node
   rclcpp std_msgs sensor_msgs pcl_conversions pcl_ros
 )
 target_link_libraries(process_data_node ${PCL_LIBRARIES})
 
-# tf_broadcaster_node (PCL NEM kell)
+# tf_broadcaster_node 
 add_executable(tf_broadcaster_node src/broadcaster.cpp)
 ament_target_dependencies(tf_broadcaster_node
   rclcpp std_msgs sensor_msgs geometry_msgs tf2_ros tf2_geometry_msgs ament_index_cpp
