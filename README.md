@@ -38,15 +38,18 @@ Type: `sensor_msgs/msg/PointCloud2`
 
 ## Project Structure
 
+```text
 ros2_ws/
 ├── src/
 │   └── racetrack_mapper/
 │       ├── CMakeLists.txt
 │       ├── package.xml
 │       └── src/
-│           └── lidar_map_builder.cpp
+│           └── data_process.cpp
+│           └── broadcaster.cpp
+│
 └── Dockerfile
-
+```
 ---
 
 ## Build & Run with Docker
