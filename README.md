@@ -41,12 +41,17 @@ Type: `sensor_msgs/msg/PointCloud2`
 ```text
 ros2_ws/
 ├── src/
-│   └── racetrack_mapper/
+│   └── racetrack_mapper_package/
 │       ├── CMakeLists.txt
 │       ├── package.xml
-│       └── src/
+│       ├── src/
 │           └── data_process.cpp
 │           └── broadcaster.cpp
+│       ├── launch/
+│           └── launcher.py
+│       ├── meas/
+│           └── your_file.mcap
+│           └── your_file.yaml
 │
 └── Dockerfile
 ```
