@@ -25,7 +25,7 @@ All deskewed frames are appended to a global PCL point cloud.
 
 ### ✔ VoxelGrid downsampling
 To keep the map size manageable, a PCL `VoxelGrid` filter is applied.  
-Typical leaf sizes: `0.1–0.3 m`.
+Leaf size: `0.8`.
 
 ### ✔ ROS2 publishing
 The final map is published as:
@@ -40,13 +40,12 @@ Type: `sensor_msgs/msg/PointCloud2`
 
 ros2_ws/
 ├── src/
-│    └── racetrack_mapper/
-│          ├── CMakeLists.txt
-│          ├── package.xml
-│          └── src/
-│               └── lidar_map_builder.cpp
+│   └── racetrack_mapper/
+│       ├── CMakeLists.txt
+│       ├── package.xml
+│       └── src/
+│           └── lidar_map_builder.cpp
 └── Dockerfile
-
 
 ---
 
@@ -60,7 +59,7 @@ ros2_ws/
 
 ## Build & Run with Docker
 
-### 1) Build the Docker image
+### 1) Build and RUN the Docker image
 
 From the workspace root:
 
