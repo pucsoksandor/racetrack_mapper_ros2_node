@@ -1,0 +1,2 @@
+Invoking command in '/ros2_ws/build/racetrack_mapper_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2_ws/src/racetrack_mapper_package -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/racetrack_mapper_package
+Invoked command in '/ros2_ws/build/racetrack_mapper_package' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2_ws/src/racetrack_mapper_package -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/racetrack_mapper_package
