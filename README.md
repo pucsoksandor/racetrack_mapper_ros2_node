@@ -49,14 +49,6 @@ ros2_ws/
 
 ---
 
-## Parameters
-
-| Parameter       | Type   | Description |
-|-----------------|--------|-------------|
-| `scan_duration` | double | Estimated duration of one LiDAR scan (used for deskewing). Default: `0.1` seconds. |
-
----
-
 ## Build & Run with Docker
 
 ### 1) Build and RUN the Docker image
